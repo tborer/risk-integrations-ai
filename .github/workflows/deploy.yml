@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 # Allow only one concurrent deployment; cancel in-progress runs
 concurrency:
@@ -30,10 +31,12 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Bypass Jekyll processing
+        run: touch .nojekyll
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the entire repo root as the static site artifact
           path: .
 
       - name: Deploy to GitHub Pages
