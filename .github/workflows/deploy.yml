@@ -18,19 +18,12 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
-    name: Deploy static site
+  build:
+    name: Build static site
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
 
       - name: Bypass Jekyll processing
         run: touch .nojekyll
@@ -39,6 +32,18 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
 
       - name: Deploy to GitHub Pages
         id: deployment
