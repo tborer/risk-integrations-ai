@@ -697,91 +697,7 @@
         <!-- ===== PLATFORM MODE SECTIONS ===== -->
         <div id="platform-sections" class="space-y-6">
 
-          <!-- 4. ON-DEMAND ANALYSIS & INTEGRATION HUB -->
-          <div class="bg-[#1e293b] rounded-xl border border-slate-800 overflow-hidden">
-            <div class="flex items-center gap-2.5 px-5 py-4 border-b border-slate-800">
-              <div class="w-1.5 h-4 rounded-full bg-green-400"></div>
-              <h2 class="text-sm font-semibold text-white">On-Demand Analysis &amp; Integration Hub</h2>
-              <span class="text-[10px] text-green-400 bg-green-900/30 border border-green-800/50 rounded-full px-2 py-0.5 ml-1">6 integrations active</span>
-            </div>
-            <div class="p-5 space-y-6">
-              <!-- Run Diagnostic -->
-              <div>
-                <p class="text-xs font-semibold text-slate-300 mb-3">Run Diagnostic</p>
-                <div class="flex items-center gap-3">
-                  <div class="flex-1 flex items-center gap-3 bg-[#0f172a] border border-slate-700 rounded-lg px-4 py-3 focus-within:border-blue-500 transition-colors">
-                    <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4 text-slate-500 flex-shrink-0" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
-                    <input type="text" placeholder="Enter vendor domain or name (e.g. xenon-logistics.com)…" class="bg-transparent text-sm text-slate-300 placeholder-slate-600 outline-none w-full" />
-                  </div>
-                  <button class="flex items-center gap-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 transition-colors rounded-lg px-5 py-3 whitespace-nowrap">
-                    <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg>
-                    Run Diagnostic
-                  </button>
-                  <button class="flex items-center gap-2 text-xs font-medium text-slate-400 border border-slate-700 hover:border-slate-500 hover:text-slate-200 transition-colors rounded-lg px-3 py-3 whitespace-nowrap">
-                    <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5"/></svg>
-                    Upload SOC-2
-                  </button>
-                </div>
-              </div>
-              <!-- Force Sync Cards -->
-              <div>
-                <p class="text-xs font-semibold text-slate-300 mb-3">Force Sync — Data Partners</p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div class="bg-[#0f172a] rounded-lg border border-slate-800 p-4 flex items-center gap-4">
-                    <div class="w-10 h-10 rounded-lg bg-blue-900/30 border border-blue-800/30 flex items-center justify-center text-xs font-bold text-blue-300 flex-shrink-0">D&amp;B</div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-slate-200">Dun &amp; Bradstreet</div>
-                      <div class="text-[11px] text-slate-500">Last sync: 47 min ago</div>
-                      <span class="inline-block mt-1 text-[10px] font-medium text-green-400 bg-green-900/30 border border-green-800/40 rounded-full px-2 py-0.5">Active</span>
-                    </div>
-                    <button class="text-xs font-medium text-blue-400 border border-blue-800/50 hover:border-blue-600 hover:text-blue-300 transition-colors rounded-md px-2.5 py-1.5 whitespace-nowrap flex-shrink-0">↺ Sync</button>
-                  </div>
-                  <div class="bg-[#0f172a] rounded-lg border border-slate-800 p-4 flex items-center gap-4">
-                    <div class="w-10 h-10 rounded-lg bg-amber-900/30 border border-amber-800/30 flex items-center justify-center text-xs font-bold text-amber-300 flex-shrink-0">BS</div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-slate-200">BitSight</div>
-                      <div class="text-[11px] text-slate-500">Last sync: 12 min ago</div>
-                      <span class="inline-block mt-1 text-[10px] font-medium text-amber-400 bg-amber-900/30 border border-amber-800/40 rounded-full px-2 py-0.5">Syncing…</span>
-                    </div>
-                    <button class="text-xs font-medium text-blue-400 border border-blue-800/50 hover:border-blue-600 hover:text-blue-300 transition-colors rounded-md px-2.5 py-1.5 whitespace-nowrap flex-shrink-0">↺ Sync</button>
-                  </div>
-                  <div class="bg-[#0f172a] rounded-lg border border-slate-800 p-4 flex items-center gap-4">
-                    <div class="w-10 h-10 rounded-lg bg-red-900/30 border border-red-800/30 flex items-center justify-center text-xs font-bold text-red-300 flex-shrink-0">DJ</div>
-                    <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium text-slate-200">Dow Jones Risk</div>
-                      <div class="text-[11px] text-slate-500">Last sync: 2h 14m ago</div>
-                      <span class="inline-block mt-1 text-[10px] font-medium text-green-400 bg-green-900/30 border border-green-800/40 rounded-full px-2 py-0.5">Active</span>
-                    </div>
-                    <button class="text-xs font-medium text-blue-400 border border-blue-800/50 hover:border-blue-600 hover:text-blue-300 transition-colors rounded-md px-2.5 py-1.5 whitespace-nowrap flex-shrink-0">↺ Sync</button>
-                  </div>
-                </div>
-              </div>
-              <!-- Document Upload Zone -->
-              <div>
-                <p class="text-xs font-semibold text-slate-300 mb-3">Ad-Hoc Document Analysis</p>
-                <div class="border-2 border-dashed border-slate-700 rounded-xl p-8 text-center hover:border-blue-700/50 transition-colors cursor-pointer group">
-                  <svg viewBox="0 0 24 24" fill="none" class="w-8 h-8 text-slate-600 group-hover:text-blue-500 transition-colors mx-auto mb-3" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.338-2.32 5.75 5.75 0 011.344 1.058"/></svg>
-                  <p class="text-sm font-medium text-slate-300 mb-1">Drop a SOC-2 report, security policy, or vendor contract here</p>
-                  <p class="text-xs text-slate-500 mb-4">AI will parse the document and output a gap analysis against the vendor's existing risk profile</p>
-                  <p class="text-[11px] text-slate-600 mb-4">Supports PDF, DOCX, TXT &bull; Up to 50MB</p>
-                  <button class="text-xs font-medium text-white bg-blue-600 hover:bg-blue-500 transition-colors rounded-lg px-4 py-2">Browse Files</button>
-                </div>
-                <!-- Recent analysis -->
-                <div class="mt-3 flex items-center justify-between bg-[#0f172a] rounded-lg border border-slate-800 px-4 py-3">
-                  <div class="flex items-center gap-3">
-                    <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-red-400 flex-shrink-0"><path fill-rule="evenodd" d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zM9.75 14.25a.75.75 0 000 1.5H15a.75.75 0 000-1.5H9.75zm0-3a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z" clip-rule="evenodd"/></svg>
-                    <div>
-                      <div class="text-xs font-medium text-slate-300">NovaPay_SOC2_2025.pdf</div>
-                      <div class="text-[11px] text-slate-500">Analyzed 2h ago &bull; 14 gaps identified &bull; 3 critical</div>
-                    </div>
-                  </div>
-                  <button class="text-xs font-medium text-violet-400 border border-violet-800/50 hover:border-violet-600 hover:text-violet-300 transition-colors rounded-md px-2.5 py-1.5 whitespace-nowrap">View Gap Analysis</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 5. API TELEMETRY & DIAGNOSTIC CONSOLE -->
+          <!-- 4. API TELEMETRY & DIAGNOSTIC CONSOLE -->
           <div class="bg-[#1e293b] rounded-xl border border-slate-800 overflow-hidden">
             <div class="flex items-center gap-2.5 px-5 py-4 border-b border-slate-800">
               <div class="w-1.5 h-4 rounded-full bg-slate-400"></div>
@@ -1006,6 +922,90 @@
                     </tr>
                   </tbody>
                 </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. ON-DEMAND ANALYSIS & INTEGRATION HUB -->
+          <div class="bg-[#1e293b] rounded-xl border border-slate-800 overflow-hidden">
+            <div class="flex items-center gap-2.5 px-5 py-4 border-b border-slate-800">
+              <div class="w-1.5 h-4 rounded-full bg-green-400"></div>
+              <h2 class="text-sm font-semibold text-white">On-Demand Analysis &amp; Integration Hub</h2>
+              <span class="text-[10px] text-green-400 bg-green-900/30 border border-green-800/50 rounded-full px-2 py-0.5 ml-1">6 integrations active</span>
+            </div>
+            <div class="p-5 space-y-6">
+              <!-- Run Diagnostic -->
+              <div>
+                <p class="text-xs font-semibold text-slate-300 mb-3">Run Diagnostic</p>
+                <div class="flex items-center gap-3">
+                  <div class="flex-1 flex items-center gap-3 bg-[#0f172a] border border-slate-700 rounded-lg px-4 py-3 focus-within:border-blue-500 transition-colors">
+                    <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4 text-slate-500 flex-shrink-0" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+                    <input type="text" placeholder="Enter vendor domain or name (e.g. xenon-logistics.com)…" class="bg-transparent text-sm text-slate-300 placeholder-slate-600 outline-none w-full" />
+                  </div>
+                  <button class="flex items-center gap-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 transition-colors rounded-lg px-5 py-3 whitespace-nowrap">
+                    <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg>
+                    Run Diagnostic
+                  </button>
+                  <button class="flex items-center gap-2 text-xs font-medium text-slate-400 border border-slate-700 hover:border-slate-500 hover:text-slate-200 transition-colors rounded-lg px-3 py-3 whitespace-nowrap">
+                    <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5"/></svg>
+                    Upload SOC-2
+                  </button>
+                </div>
+              </div>
+              <!-- Force Sync Cards -->
+              <div>
+                <p class="text-xs font-semibold text-slate-300 mb-3">Force Sync — Data Partners</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div class="bg-[#0f172a] rounded-lg border border-slate-800 p-4 flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-lg bg-blue-900/30 border border-blue-800/30 flex items-center justify-center text-xs font-bold text-blue-300 flex-shrink-0">D&amp;B</div>
+                    <div class="flex-1 min-w-0">
+                      <div class="text-sm font-medium text-slate-200">Dun &amp; Bradstreet</div>
+                      <div class="text-[11px] text-slate-500">Last sync: 47 min ago</div>
+                      <span class="inline-block mt-1 text-[10px] font-medium text-green-400 bg-green-900/30 border border-green-800/40 rounded-full px-2 py-0.5">Active</span>
+                    </div>
+                    <button class="text-xs font-medium text-blue-400 border border-blue-800/50 hover:border-blue-600 hover:text-blue-300 transition-colors rounded-md px-2.5 py-1.5 whitespace-nowrap flex-shrink-0">↺ Sync</button>
+                  </div>
+                  <div class="bg-[#0f172a] rounded-lg border border-slate-800 p-4 flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-lg bg-amber-900/30 border border-amber-800/30 flex items-center justify-center text-xs font-bold text-amber-300 flex-shrink-0">BS</div>
+                    <div class="flex-1 min-w-0">
+                      <div class="text-sm font-medium text-slate-200">BitSight</div>
+                      <div class="text-[11px] text-slate-500">Last sync: 12 min ago</div>
+                      <span class="inline-block mt-1 text-[10px] font-medium text-amber-400 bg-amber-900/30 border border-amber-800/40 rounded-full px-2 py-0.5">Syncing…</span>
+                    </div>
+                    <button class="text-xs font-medium text-blue-400 border border-blue-800/50 hover:border-blue-600 hover:text-blue-300 transition-colors rounded-md px-2.5 py-1.5 whitespace-nowrap flex-shrink-0">↺ Sync</button>
+                  </div>
+                  <div class="bg-[#0f172a] rounded-lg border border-slate-800 p-4 flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-lg bg-red-900/30 border border-red-800/30 flex items-center justify-center text-xs font-bold text-red-300 flex-shrink-0">DJ</div>
+                    <div class="flex-1 min-w-0">
+                      <div class="text-sm font-medium text-slate-200">Dow Jones Risk</div>
+                      <div class="text-[11px] text-slate-500">Last sync: 2h 14m ago</div>
+                      <span class="inline-block mt-1 text-[10px] font-medium text-green-400 bg-green-900/30 border border-green-800/40 rounded-full px-2 py-0.5">Active</span>
+                    </div>
+                    <button class="text-xs font-medium text-blue-400 border border-blue-800/50 hover:border-blue-600 hover:text-blue-300 transition-colors rounded-md px-2.5 py-1.5 whitespace-nowrap flex-shrink-0">↺ Sync</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Document Upload Zone -->
+              <div>
+                <p class="text-xs font-semibold text-slate-300 mb-3">Ad-Hoc Document Analysis</p>
+                <div class="border-2 border-dashed border-slate-700 rounded-xl p-8 text-center hover:border-blue-700/50 transition-colors cursor-pointer group">
+                  <svg viewBox="0 0 24 24" fill="none" class="w-8 h-8 text-slate-600 group-hover:text-blue-500 transition-colors mx-auto mb-3" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.338-2.32 5.75 5.75 0 011.344 1.058"/></svg>
+                  <p class="text-sm font-medium text-slate-300 mb-1">Drop a SOC-2 report, security policy, or vendor contract here</p>
+                  <p class="text-xs text-slate-500 mb-4">AI will parse the document and output a gap analysis against the vendor's existing risk profile</p>
+                  <p class="text-[11px] text-slate-600 mb-4">Supports PDF, DOCX, TXT &bull; Up to 50MB</p>
+                  <button class="text-xs font-medium text-white bg-blue-600 hover:bg-blue-500 transition-colors rounded-lg px-4 py-2">Browse Files</button>
+                </div>
+                <!-- Recent analysis -->
+                <div class="mt-3 flex items-center justify-between bg-[#0f172a] rounded-lg border border-slate-800 px-4 py-3">
+                  <div class="flex items-center gap-3">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-red-400 flex-shrink-0"><path fill-rule="evenodd" d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zM9.75 14.25a.75.75 0 000 1.5H15a.75.75 0 000-1.5H9.75zm0-3a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z" clip-rule="evenodd"/></svg>
+                    <div>
+                      <div class="text-xs font-medium text-slate-300">NovaPay_SOC2_2025.pdf</div>
+                      <div class="text-[11px] text-slate-500">Analyzed 2h ago &bull; 14 gaps identified &bull; 3 critical</div>
+                    </div>
+                  </div>
+                  <button class="text-xs font-medium text-violet-400 border border-violet-800/50 hover:border-violet-600 hover:text-violet-300 transition-colors rounded-md px-2.5 py-1.5 whitespace-nowrap">View Gap Analysis</button>
+                </div>
               </div>
             </div>
           </div>
